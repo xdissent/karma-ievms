@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/xdissent/karma-ievms"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/xdissent/karma-ievms/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments"><div class="wrapper"><h1 id="karma-ievms">karma-ievms</h1>
+
+<p><a href="http://karma-runner.github.io">Karma</a> launcher for 
+<a href="http://xdissent.github.io/ievms">ievms</a> virtual machines.</p>
+
+<p><a href="http://badge.fury.io/js/karma-ievms"><img src="https://badge.fury.io/js/karma-ievms.png" alt="NPM version" title="" /></a></p>
+
+<p>This Karma plugin adds browser launchers for ievms virtual machines. This
+allows for testing across multiple versions of Internet Explorer simultaneously.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>This module currently requires the <code>canary</code> version of Karma:</p>
+
+<pre><code class="sh">$ npm install 'karma@canary' --save-dev
+</code></pre>
+
+<p>Note that the Karma configuration file format has changed since <code>v0.8</code>. Use 
+<code>karma init</code> to generate a fresh config.</p>
+
+<p>It is also assumed that you have installed IE virtual machines with 
+<a href="http://xdissent.github.io/ievms">ievms</a> or 
+<a href="http://xdissent.github.io/iectrl">iectrl</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Install the plugin from npm:</p>
+
+<pre><code class="sh">$ npm install karma-ievms --save-dev
+</code></pre>
+
+<p>Or from Github:</p>
+
+<pre><code class="sh">$ npm install 'git+https://github.com/xdissent/karma-ievms.git' --save-dev
+</code></pre>
+
+<p>Install the ievms virtual machines on which you wish to test. See the 
+<a href="http://xdissent.github.io/ievms">ievms homepage</a> or 
+<a href="http://xdissent.github.io/iectrl">iectrl</a> for further instructions.</p>
+
+<p>Add ievms virtual machine names to the <code>browsers</code> key in your Karma 
+configuration:</p>
+
+<pre><code class="coffee">module.exports = (karma) -&gt;
+  karma.configure
+
+    # Start these browsers:
+    browsers = [
+      'IE8 - WinXP'
+      'IE9 - Win7'
+      'IE10 - Win7'
+    ]
+
+    # ...
+</code></pre>
+
+<h2 id="usage">Usage</h2>
+
+<p>Just run your tests!</p>
+
+<pre><code class="sh">$ karma start
+INFO [karma]: Karma v0.9.3 server started at http://localhost:9876/
+INFO [launcher]: Starting browser IE8 - WinXP
+INFO [launcher]: Starting browser IE9 - Win7
+INFO [launcher]: Starting browser IE10 - Win7
+INFO [IE 10.0.0 (Windows 7)]: Connected on socket id QMtH-ssLaEC-4Ad-HQcx
+INFO [IE 8.0.0 (Windows XP)]: Connected on socket id 7cU0uMkf_0LKybq0HQcy
+INFO [IE 9.0.0 (Windows 7)]: Connected on socket id Qva0anolj13o15hqHQcz
+IE 10.0.0 (Windows 7): Executed 1 of 1 SUCCESS (0.155 secs / 0.022 secs)
+IE 8.0.0 (Windows XP): Executed 1 of 1 SUCCESS (0.219 secs / 0.063 secs)
+IE 9.0.0 (Windows 7): Executed 1 of 1 SUCCESS (0.369 secs / 0.028 secs)
+TOTAL: 3 SUCCESS
+</code></pre>
+
+<p>If you'd like to see the debug output from ievms/iectrl, set the <code>DEBUG</code> 
+environment variable to <code>iectrl:*</code>:</p>
+
+<pre><code class="sh">$ export DEBUG='iectrl:*' # for bash
+</code></pre>
+
+<pre><code class="sh">$ set -x DEBUG 'iectr:*' # for fish
+</code></pre></div></div></div></div></body></html>
