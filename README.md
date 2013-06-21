@@ -24,7 +24,7 @@ Note that the Karma configuration file format has changed since `v0.8`. Use
 
 It is also assumed that you have installed IE virtual machines with 
 [ievms](http://xdissent.github.io/ievms) or 
-[iectrl](http://github.com/xdissent/iectrl).
+[iectrl](http://xdissent.github.io/iectrl).
 
 
 Installation
@@ -44,7 +44,7 @@ $ npm install 'git+https://github.com/xdissent/karma-ievms.git' --save-dev
 
 Install the ievms virtual machines on which you wish to test. See the 
 [ievms homepage](http://xdissent.github.io/ievms) or 
-[iectrl](http://github.com/xdissent/iectrl) for further instructions.
+[iectrl](http://xdissent.github.io/iectrl) for further instructions.
 
 Add ievms virtual machine names to the `browsers` key in your Karma 
 configuration:
