@@ -1,0 +1,30 @@
+{
+  "name": "karma-ievms",
+  "version": "0.0.0",
+  "description": "Karma launcher for ievms",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "prepublish": "coffee -cbo lib src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xdissent/karma-ievms.git"
+  },
+  "keywords": [
+    "karma",
+    "test",
+    "modern.ie",
+    "ie",
+    "ievms",
+    "explorer"
+  ],
+  "author": "Greg Thornton <xdissent@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdissent/karma-ievms/issues"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  }
+}
