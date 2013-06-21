@@ -1,7 +1,7 @@
 {
   "name": "karma-ievms",
   "version": "0.0.0",
-  "description": "Karma launcher for ievms",
+  "description": "Karma launcher for ievms virtual machines",
   "main": "index.js",
   "scripts": {
     "test": "coffeelint -r src",
