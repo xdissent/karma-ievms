@@ -1,6 +1,6 @@
 {
   "name": "karma-ievms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Karma launcher for ievms virtual machines",
   "main": "index.js",
   "scripts": {
