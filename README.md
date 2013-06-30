@@ -92,5 +92,5 @@ $ export DEBUG='iectrl:*' # for bash
 ```
 
 ```sh
-$ set -x DEBUG 'iectr:*' # for fish
+$ set -x DEBUG 'iectrl:*' # for fish
 ```
