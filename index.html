@@ -41,8 +41,8 @@ allows for testing across multiple versions of Internet Explorer simultaneously.
 <p>Add ievms virtual machine names to the <code>browsers</code> key in your Karma 
 configuration:</p>
 
-<pre><code class="coffee">module.exports = (karma) -&gt;
-  karma.configure
+<pre><code class="coffee">module.exports = (config) -&gt;
+  config.set
 
     # Start these browsers:
     browsers = [
