@@ -13,16 +13,7 @@ allows for testing across multiple versions of Internet Explorer simultaneously.
 Requirements
 ------------
 
-This module currently requires the `canary` version of Karma:
-
-```sh
-$ npm install 'karma@canary' --save-dev
-```
-
-Note that the Karma configuration file format has changed since `v0.8`. Use 
-`karma init` to generate a fresh config.
-
-It is also assumed that you have installed IE virtual machines with 
+You must have installed whichever IE virtual machines you wish to use with 
 [ievms](http://xdissent.github.io/ievms) or 
 [iectrl](http://xdissent.github.io/iectrl).
 
