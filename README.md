@@ -50,8 +50,8 @@ Add ievms virtual machine names to the `browsers` key in your Karma
 configuration:
 
 ```coffee
-module.exports = (karma) ->
-  karma.configure
+module.exports = (config) ->
+  config.set
 
     # Start these browsers:
     browsers = [
