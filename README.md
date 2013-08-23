@@ -46,8 +46,8 @@ module.exports = (config) ->
 
     # Start these browsers:
     browsers = [
-      'IE8 - WinXP'
-      'IE9 - Win7'
+      'IE8 - WinXP',
+      'IE9 - Win7',
       'IE10 - Win7'
     ]
 
