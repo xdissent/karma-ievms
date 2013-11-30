@@ -1,0 +1,19 @@
+{
+  "name": "karma-ievms-example",
+  "description": "ievms for Karma example",
+  "keywords": [
+    "karma",
+    "ievms",
+    "lorem"
+  ],
+  "version": "0.0.0",
+  "author": {
+    "name": "Greg Thornton",
+    "email": "xdissent@me.com",
+    "url": "http://xdissent.com"
+  },
+  "devDependencies": {
+    "karma": ">=0.9"
+  },
+  "private": true
+}
