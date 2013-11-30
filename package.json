@@ -32,7 +32,7 @@
     "coffeelint": "~0.5.6"
   },
   "dependencies": {
-    "iectrl": "0.0.1"
+    "iectrl": "~0.0.3"
   },
   "peerDependencies": {
     "karma": ">=0.9"
